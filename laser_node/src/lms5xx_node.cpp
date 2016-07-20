@@ -102,7 +102,8 @@ int main(int argc, char **argv)
 	//nh_ns.param("inverted", inverted, false);
 	nh_ns.param("angle", angle, 0);
 	nh_ns.param("resolution", resolution, 0.0);
-	nh_ns.param<std::string>("ip_add", ip_add, "192.168.137.115");
+	nh_ns.param<std::string>("ip_add", ip_add, "192.168.1.8");
+	// nh_ns.param<std::string>("ip_add", ip_add, "192.168.137.115");
 	nh_ns.param<std::string> ("frame_id", frame_id, "laser");
 
 	uint32_t range_values[SickLMS5xx::SICK_LMS_5XX_MAX_NUM_MEASUREMENTS] = { 0 };
