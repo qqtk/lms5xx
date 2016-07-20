@@ -1,5 +1,6 @@
 # lms5xx
 Driver for the Sick lms5xx in ROS Jade (might work for other versions).
+ git://github.com/NatanBiesmans/lms5xx.git
 
 With this driver already contains a version of sicktoolbox(2) so need for it.
 This driver will create a LaserScan topic under the name /Scan that you can subscripe to.
@@ -8,7 +9,7 @@ Install:
 1. Create a catkin package with the name laser_node.
 2. Delete all the files in the package.
 3. Copy the contents of the file in the catking package.
-4. Go to lms5xx_node.cpp in src and alter the ip adress to the one of you're Sick lms5xx.
+4. Go to lms5xx_node.cpp in src and alter the ip adress to the one of you're Sick lms5xx. (Ln.105: ip_add, "192.168.1.8
 4. Go to the source of the catkin_workspace and use catkin_make.
 5. Use the command "devel/setup.bash"
 
